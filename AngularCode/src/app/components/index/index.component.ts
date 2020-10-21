@@ -21,9 +21,21 @@ export class IndexComponent implements OnInit {
 			orientation: 'down',
 			scale: 1.8
 		});
-		ScrollReveal().reveal('.header-text',{
-				delay: 100
-		});
+		setTimeout(()=>
+		{
+			ScrollReveal().reveal('.header-text',{
+					delay: 100
+			});
+			ScrollReveal().reveal('.ScrollReveal-section',{
+					delay: 300
+			});
+			ScrollReveal().reveal('.ScrollReveal-card',{
+					delay: 300
+			});
+			ScrollReveal().reveal('.ScrollReveal-who',{
+					delay: 300
+			});
+		},100);
 	}
 
 }
